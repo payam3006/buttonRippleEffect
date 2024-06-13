@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(50, 130, 161);
+  color: white;
+  /* background-image: url("1.JPG"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* filter: blur(70px); */
+  position: relative;
+}
+
+.btn {
+  background-color: blueviolet;
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  animation: anim 0.8s ease-in-out;
+}
+@keyframes anim {
+  0% {
+    scale: 0;
+    opacity: 1;
+  }
+  100% {
+    scale: 2;
+    opacity: 0;
+  }
+}
+
+.text {
+  pointer-events: none;
+}
